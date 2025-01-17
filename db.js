@@ -3,7 +3,7 @@ require('dotenv').config();
 
 //const mongoURL= "mongodb://localhost:27017/hotel"
 //const mongoURL= "mongodb+srv://happy:sarthak123@cluster0.msmnz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-const mongoURL= process.env.mongo_URL;
+const mongoURL= process.env.mongoURL;
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
