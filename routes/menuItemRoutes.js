@@ -1,8 +1,6 @@
-const express= require('express');
-const Router= express.Router();
-
-const Menu= require('../models/menu.js');
-const router = require('./personRoutes');
+const express= require("express");
+const router= express.Router();
+const Menu= require("../models/menu")
 
 
 

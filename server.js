@@ -1,6 +1,7 @@
 const express= require('express');
 const app= express();
 const db = require('./db'); 
+require('dotenv').config();
 
 const Person= require("./models/person.js")
 const Menu= require("./models/menu.js")
@@ -11,8 +12,8 @@ app.use(bodyparser.json());
 
 
 
-
-app.listen(9000, ()=>{
+const PORT= process.env.PORT || 9000;
+app.listen(PORT, ()=>{
     console.log('Server is running on port 9000')
 });
 
